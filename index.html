@@ -55,10 +55,6 @@
 
     <!-- ================= LAYER 1: CINEMATIC INTRO SPLASH STAGE ================= -->
     <div id="intro-stage" class="fixed inset-0 bg-[#050100] z-50 flex flex-col items-center justify-center overflow-hidden view-transition opacity-100">
-        <!-- Ambient video overlay hint inside splash for high-end luxury feel -->
-        <div class="absolute inset-0 opacity-15 pointer-events-none scale-105">
-            <iframe src="https://player.vimeo.com/video/162815714?autoplay=1&loop=1&background=1&muted=1&quality=720p" frameborder="0" class="w-full h-full object-cover"></iframe>
-        </div>
         <div id="intro-content" class="text-center flex flex-col items-center view-transition transform scale-95 duration-1000">
             <div class="w-24 h-24 mb-6 rounded-full border border-[#dca169]/40 flex items-center justify-center bg-gradient-to-br from-[#1c0e07] to-[#050100] shadow-2xl">
                 <span class="font-luxury text-4xl font-black text-[#dca169]/90 tracking-tighter">AR</span>
@@ -72,7 +68,6 @@
     </div>
 
     <!-- ================= LAYER 2: APP GLOBAL IDENTITY FRAME ================= -->
-    <!-- Brand Header & Category Status Hub -->
     <header id="global-header" class="bg-gradient-to-b from-[#140a06] to-[#0b0503] border-b border-[#29140c] px-12 py-5 flex justify-between items-center shrink-0 shadow-2xl z-20 view-transition opacity-0">
         <div>
             <h2 class="font-luxury text-3xl font-black tracking-wide text-white flex items-center gap-3">
@@ -81,30 +76,27 @@
             <p class="text-[11px] font-medium text-[#bca396] tracking-wider uppercase mt-1">🌿 Experience Deliberate Nature, Fine Food & Tranquility</p>
         </div>
         
-        <!-- Live Active Dynamic Screen Category HUD Tracking Display -->
         <div class="text-center bg-gradient-to-r from-[#1c0d07] via-[#33190e] to-[#1c0d07] px-12 py-2.5 rounded-2xl border border-[#422214] shadow-inner min-w-[340px]">
             <span class="text-[9px] uppercase font-black tracking-[0.35em] text-[#dca169] block">Now Displaying</span>
             <span id="active-category-title" class="font-luxury text-xl font-black text-white tracking-wide block uppercase transition-all duration-500">Master Kitchen Cuts</span>
         </div>
 
-        <!-- Call to Action Info Label -->
         <div class="bg-[#140a05] px-5 py-2.5 rounded-xl border border-[#2b150c] text-right">
             <span class="text-[9px] uppercase block tracking-widest text-[#a68c7e] font-bold">🛎️ Service Protocol</span>
             <span class="text-xs font-bold text-white">Kindly Note Items & Signal Your Server Captain</span>
         </div>
     </header>
 
-    <!-- Main Dynamic Presentation Content Canvas Window -->
+    <!-- Main Dynamic Content Canvas -->
     <main class="flex-1 relative min-h-0 w-full overflow-hidden">
         
-        <!-- Deep Dynamic Atmospheric Ambient Canvas Tones -->
         <div class="absolute inset-0 bg-gradient-to-tr from-[#060201] via-[#140a06] to-[#060201] z-0"></div>
         <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-[#dca169]/5 via-transparent to-transparent ambient-glow z-0"></div>
 
         <!-- ================= PANEL VIEW A: MAINS & CRAFT SPECIALTIES ================= -->
         <div id="view-mains-hub" class="view-transition absolute inset-0 grid grid-cols-12 gap-6 p-6 opacity-0 pointer-events-none z-10">
             
-            <!-- Left Side Frame: Live Kitchen Showcase Stream Window -->
+            <!-- Left Side Frame: Live Photo Showcase Engine Window -->
             <div class="col-span-4 flex flex-col gap-5 min-h-0">
                 <div class="bg-gradient-to-b from-[#130804] to-[#0b0402] p-5 rounded-3xl border border-[#261309] flex-1 flex flex-col min-h-0 shadow-2xl relative overflow-hidden">
                     <div class="flex justify-between items-center mb-3 shrink-0">
@@ -112,24 +104,20 @@
                             <span class="text-[9px] font-black uppercase tracking-widest text-[#dca169] block">Visual Deck</span>
                             <h3 class="font-luxury text-lg font-bold text-white">The Hot Line Assembly</h3>
                         </div>
-                        <span class="text-[10px] bg-[#291107] border border-[#4d2311] px-2.5 py-0.5 rounded-full text-[#dca169] font-mono animate-pulse">● CINEMATIC FEED</span>
+                        <span class="text-[10px] bg-[#291107] border border-[#4d2311] px-2.5 py-0.5 rounded-full text-[#dca169] font-mono animate-pulse">● LIVE PLATTER FEED</span>
                     </div>
 
-                    <!-- Hybrid Media Canvas Viewport (Vimeo Background Layer + Unsplash Overlay Titles) -->
+                    <!-- Photo Engine Canvas Viewport -->
                     <div class="flex-1 rounded-2xl overflow-hidden relative bg-[#050100] border border-[#1f0e06]">
-                        <div class="absolute inset-0 w-full h-full pointer-events-none scale-110">
-                            <!-- Looping Cinematic Food Artistry Stream from Vimeo -->
-                            <iframe src="https://player.vimeo.com/video/291410292?autoplay=1&loop=1&background=1&muted=1&quality=720p" frameborder="0" class="w-full h-full object-cover"></iframe>
-                        </div>
-                        <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent/40"></div>
+                        <img id="infinite-food-image" src="" alt="Gourmet Showcase" class="w-full h-full object-cover opacity-90 transition-all duration-1000 scale-100">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
                         <div class="absolute bottom-4 left-4 right-4 bg-black/60 backdrop-blur-md p-3.5 rounded-xl border border-white/5">
-                            <span class="text-[9px] uppercase tracking-wider font-black text-[#dca169] block">Live Culinary Stream</span>
-                            <p id="infinite-food-title" class="font-luxury text-base text-white font-bold tracking-wide">Signature Char-Charred Masterpieces</p>
+                            <span class="text-[9px] uppercase tracking-wider font-black text-[#dca169] block">Hot Line Feature</span>
+                            <p id="infinite-food-title" class="font-luxury text-base text-white font-bold tracking-wide">Crafting Perfection...</p>
                         </div>
                     </div>
                 </div>
 
-                <!-- Premium Integrated Live Atmosphere Segment -->
                 <div class="bg-gradient-to-r from-[#140804] to-[#1a0c06] p-5 rounded-3xl border border-[#261309] shrink-0 shadow-xl relative overflow-hidden">
                     <div class="absolute -right-6 -bottom-6 w-20 h-20 bg-[#dca169]/5 rounded-full blur-xl"></div>
                     <span class="text-[10px] font-black text-[#dca169] tracking-widest block uppercase mb-1">🎵 Live Vibe Sessions</span>
@@ -140,10 +128,10 @@
                 </div>
             </div>
 
-            <!-- Right Side Frame: High-Density Sliding Premium Horizontal Rows -->
+            <!-- Right Side Frame: Horizontal Rows -->
             <div class="col-span-8 flex flex-col min-h-0 gap-y-6">
                 
-                <!-- ROW A1: Core Premium Kitchen Cuts (Sourced via Unsplash Matrices) -->
+                <!-- ROW A1: Core Premium Kitchen Cuts -->
                 <div class="flex-1 flex flex-col min-h-0">
                     <div class="flex justify-between items-end mb-2.5 shrink-0 px-2">
                         <div>
@@ -154,7 +142,7 @@
                     </div>
                     
                     <div id="netflix-mains-strip" class="flex-1 grid grid-cols-4 gap-4 overflow-x-auto min-h-0 pb-1">
-                        <!-- Instantiated Dynamically via Layout Compiler Engine -->
+                        <!-- Instantiated Dynamically -->
                     </div>
                 </div>
 
@@ -166,7 +154,7 @@
                     </div>
                     
                     <div id="netflix-specialties-strip" class="flex-1 grid grid-cols-4 gap-4 overflow-x-auto min-h-0 pb-1">
-                        <!-- Instantiated Dynamically via Layout Compiler Engine -->
+                        <!-- Instantiated Dynamically -->
                     </div>
                 </div>
 
@@ -188,7 +176,7 @@
                 </div>
 
                 <div id="netflix-platters-grid" class="flex-1 grid grid-cols-3 gap-4 overflow-y-auto pr-1">
-                    <!-- Instantiated Dynamically via Layout Compiler Engine -->
+                    <!-- Instantiated Dynamically -->
                 </div>
             </div>
 
@@ -237,7 +225,7 @@
         </div>
     </footer>
 
-    <!-- ================= HARDWARE LEVEL SYSTEM ENGINE MATRIX ================= -->
+    <!-- ================= SYSTEM LOGIC COMPILER MATRIX ================= -->
     <script>
         const menuMatrix = {
             "mains": [
@@ -299,41 +287,51 @@
         const juicesList = document.getElementById('drinks-juices-list');
         const shakesList = document.getElementById('drinks-shakes-list');
 
-        // State Machine Index: 0 = Splash Cover, 1 = Kitchen Cuts, 2 = Platters & Drinks
-        let currentBroadcastState = 0; 
+        const infiniteImgElement = document.getElementById('infinite-food-image');
+        const infiniteTitleElement = document.getElementById('infinite-food-title');
+
+        let showcaseVisualPool = [];
+        let currentShowcaseIndex = 0;
+        let currentBroadcastState = 0; // Index: 0 = Splash Cover, 1 = Kitchen Cuts, 2 = Platters & Drinks
 
         function executeLayoutCompilation() {
-            mainsContainer.innerHTML = menuMatrix.mains.map(item => `
-                <div class="bg-[#120603] rounded-2xl overflow-hidden border border-[#2b140a] flex flex-col shrink-0 relative shadow-xl">
-                    <div class="h-28 w-full overflow-hidden relative">
-                        <img src="${item.image}" alt="${item.name}" class="w-full h-full object-cover opacity-85">
-                        <div class="absolute inset-0 bg-gradient-to-t from-[#120603] via-transparent to-transparent"></div>
-                        <div class="absolute top-2.5 right-2.5 bg-black/75 px-2.5 py-1 rounded-lg border border-[#dca169]/30 text-[#dca169] text-xs font-black font-mono">
-                            ${item.price}
+            mainsContainer.innerHTML = menuMatrix.mains.map(item => {
+                showcaseVisualPool.push({ name: item.name, img: item.image });
+                return `
+                    <div class="bg-[#120603] rounded-2xl overflow-hidden border border-[#2b140a] flex flex-col shrink-0 relative shadow-xl">
+                        <div class="h-28 w-full overflow-hidden relative">
+                            <img src="${item.image}" alt="${item.name}" class="w-full h-full object-cover opacity-85">
+                            <div class="absolute inset-0 bg-gradient-to-t from-[#120603] via-transparent to-transparent"></div>
+                            <div class="absolute top-2.5 right-2.5 bg-black/75 px-2.5 py-1 rounded-lg border border-[#dca169]/30 text-[#dca169] text-xs font-black font-mono">
+                                ${item.price}
+                            </div>
+                        </div>
+                        <div class="p-3.5 flex-1 flex flex-col justify-between bg-[#120603]">
+                            <h4 class="font-luxury font-bold text-sm text-white tracking-wide truncate">${item.name}</h4>
+                            <p class="text-[10px] text-[#bda393] leading-tight line-clamp-2 mt-1">${item.desc}</p>
                         </div>
                     </div>
-                    <div class="p-3.5 flex-1 flex flex-col justify-between bg-[#120603]">
-                        <h4 class="font-luxury font-bold text-sm text-white tracking-wide truncate">${item.name}</h4>
-                        <p class="text-[10px] text-[#bda393] leading-tight line-clamp-2 mt-1">${item.desc}</p>
-                    </div>
-                </div>
-            `).join('');
+                `;
+            }).join('');
 
-            specialtiesContainer.innerHTML = menuMatrix.specialties.map(item => `
-                <div class="bg-[#120603] rounded-2xl overflow-hidden border border-[#2b140a] flex flex-col shrink-0 relative shadow-xl">
-                    <div class="h-28 w-full overflow-hidden relative">
-                        <img src="${item.image}" alt="${item.name}" class="w-full h-full object-cover opacity-85">
-                        <div class="absolute inset-0 bg-gradient-to-t from-[#120603] via-transparent to-transparent"></div>
-                        <div class="absolute top-2.5 right-2.5 bg-black/75 px-2.5 py-1 rounded-lg border border-[#dca169]/30 text-[#dca169] text-xs font-black font-mono">
-                            ${item.price}
+            specialtiesContainer.innerHTML = menuMatrix.specialties.map(item => {
+                showcaseVisualPool.push({ name: item.name, img: item.image });
+                return `
+                    <div class="bg-[#120603] rounded-2xl overflow-hidden border border-[#2b140a] flex flex-col shrink-0 relative shadow-xl">
+                        <div class="h-28 w-full overflow-hidden relative">
+                            <img src="${item.image}" alt="${item.name}" class="w-full h-full object-cover opacity-85">
+                            <div class="absolute inset-0 bg-gradient-to-t from-[#120603] via-transparent to-transparent"></div>
+                            <div class="absolute top-2.5 right-2.5 bg-black/75 px-2.5 py-1 rounded-lg border border-[#dca169]/30 text-[#dca169] text-xs font-black font-mono">
+                                ${item.price}
+                            </div>
+                        </div>
+                        <div class="p-3.5 flex-1 flex flex-col justify-between bg-[#120603]">
+                            <h4 class="font-luxury font-bold text-sm text-white tracking-wide truncate">${item.name}</h4>
+                            <p class="text-[10px] text-[#bda393] leading-tight line-clamp-2 mt-1">${item.desc}</p>
                         </div>
                     </div>
-                    <div class="p-3.5 flex-1 flex flex-col justify-between bg-[#120603]">
-                        <h4 class="font-luxury font-bold text-sm text-white tracking-wide truncate">${item.name}</h4>
-                        <p class="text-[10px] text-[#bda393] leading-tight line-clamp-2 mt-1">${item.desc}</p>
-                    </div>
-                </div>
-            `).join('');
+                `;
+            }).join('');
 
             plattersContainer.innerHTML = menuMatrix.platters.map(item => `
                 <div class="bg-gradient-to-br from-[#180904] to-[#0c0402] p-4 rounded-2xl border border-[#3b1c0e] flex flex-col justify-between shadow-xl relative overflow-hidden">
@@ -364,10 +362,28 @@
             `).join('');
         }
 
-        // Three-Screen Precision Infinite Looping Automation Matrix
+        function runVisualShowcaseRotation() {
+            if (showcaseVisualPool.length === 0) return;
+            
+            infiniteImgElement.style.opacity = '0.1';
+            infiniteImgElement.style.transform = 'scale(0.97)';
+            
+            setTimeout(() => {
+                const matrixAsset = showcaseVisualPool[currentShowcaseIndex];
+                infiniteImgElement.src = matrixAsset.img;
+                infiniteTitleElement.innerText = matrixAsset.name;
+                
+                infiniteImgElement.style.opacity = '0.9';
+                infiniteImgElement.style.transform = 'scale(1)';
+                
+                currentShowcaseIndex = (currentShowcaseIndex + 1) % showcaseVisualPool.length;
+            }, 1000);
+        }
+
+        // Loop automation core state engine
         function executeMasterScreenRotation() {
             if (currentBroadcastState === 0) {
-                // STATE 0: Display Immersive Fullscreen Splash Deck (Hide functional margins)
+                // STATE 0: Immersive Intro Splash Cover View
                 globalHeader.classList.add('opacity-0');
                 globalFooter.classList.add('opacity-0');
                 viewMainsHub.classList.add('opacity-0', 'pointer-events-none');
@@ -380,11 +396,10 @@
                     introContent.classList.add('scale-100', 'opacity-100', 'splash-scale');
                 }, 100);
 
-                // Set pointer path targeting kitchen cuts next
                 currentBroadcastState = 1;
 
             } else if (currentBroadcastState === 1) {
-                // STATE 1: Display Kitchen Cuts Deck (Animate global frames in)
+                // STATE 1: Kitchen Cuts View
                 introContent.classList.remove('splash-scale');
                 introStage.classList.add('opacity-0', 'pointer-events-none');
                 viewBeveragesHub.classList.add('opacity-0', 'pointer-events-none');
@@ -396,26 +411,27 @@
                 viewMainsHub.classList.remove('opacity-0', 'pointer-events-none');
                 viewMainsHub.classList.add('opacity-100');
 
-                // Set pointer path targeting elixirs / platters next
                 currentBroadcastState = 2;
 
             } else if (currentBroadcastState === 2) {
-                // STATE 2: Display Platters & Premium Drinks Matrix
+                // STATE 2: Shared Platters & Drinks
                 viewMainsHub.classList.add('opacity-0', 'pointer-events-none');
                 
                 activeCategoryTitle.innerText = "Shared Platters & Elixirs";
                 viewBeveragesHub.classList.remove('opacity-0', 'pointer-events-none');
                 viewBeveragesHub.classList.add('opacity-100');
 
-                // Recoil pointer target directly back into the splash entry to close infinite circle
                 currentBroadcastState = 0;
             }
         }
 
         window.addEventListener('DOMContentLoaded', () => {
             executeLayoutCompilation();
+            runVisualShowcaseRotation();
             
-            // Execute automated state switching sequences (Dispatches seamlessly every 14 seconds)
+            setInterval(runVisualShowcaseRotation, 5000);
+
+            // Dispatch state switching sequence loop every 14 seconds
             executeMasterScreenRotation();
             setInterval(executeMasterScreenRotation, 14000);
         });
